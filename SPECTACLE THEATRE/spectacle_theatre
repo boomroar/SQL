@@ -1,0 +1,20 @@
+CREATE TABLE events (
+	id SERIAL,
+	show_time TIMESTAMP,
+	PRIMARY KEY(id)
+	auditorium_id INT,
+	film_id INT NOT NULL
+);
+
+CREATE TABLE auditorium (
+	id SERIAL,
+	capacity INTEGER NOT NULL,
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE (
+	id SERIAL,
+	title TEXT NOT NULL,
+	runtime INT,
+	PRIMARY KEY(id)
+);
